@@ -84,7 +84,7 @@ If you don’t have one already, get an OpenAI key from [here](https://platform.
 export OPENAI_API_KEY=sk-proj-....
 
 curl -H "Content-Type: application/json" \
-    -H "Authorization: Bearer $API_TOKEN" \
+    -H "Authorization: Bearer $OPENAI_API_KEY" \
     -d '{"model":"gpt-4.1-mini","messages":[{"role":"user","content":"What is 1+1?"}]}' \
     https://api.openai.com/v1/chat/completions
 ```
